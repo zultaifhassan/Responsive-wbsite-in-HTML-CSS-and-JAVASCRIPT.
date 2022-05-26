@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger navbar</title>
+
+  <link rel="stylesheet" href="respon.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Navbar Section -->
+
+  <nav class="navbar">
+    <div class="logo">
+      <h2>ZH Studio</h2>
+    </div>
+    <a href="#" class="toggle-button" onclick="myCross(this)">
+      <span class="bar"></span>
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+    </a>
+    <div class="links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <!-- slidershow images -->
+
+  <div class="slideshow-container">
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="pic/istockphoto-1198271727-170667a.jpg" style="width:100%">
+      <div class="text">Colors of Life</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="pic/istockphoto-1200200143-170667a.jpg" style="width:100%">
+      <div class="text">Technology change Life</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="pic/istockphoto-962394646-170667a.jpg" style="width:100%">
+      <div class="text">Mirrors</div>
+    </div>
+
+
+  </div>
+  <br>
+
+  <div class="slide-photo">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <!-- new arrival ection -->
+
+  <div class="new-arrival">
+    <div class="header-1">
+      <h3>new arrival of items</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, at!</p>
+    </div>
+
+    <div class="item-boxes">
+      <div class="product-box">
+
+        <div class="box-img">
+          <img src="pic/photo-1496171367470-9ed9a91ea931.png" alt="">
+        </div>
+        <div class="product-detail">
+
+          <h4 class="p-detail">apple laptops</h4>
+          <span class="p-price">$6699</span>
+        </div>
+
+      </div>
+      <div class="product-box">
+
+        <div class="box-img">
+          <img src="pic/photo-1505740420928-5e560c06d30e.jpg" alt="">
+        </div>
+        <div class="product-detail">
+
+          <h4 class="p-detail">music headphones</h4>
+          <span class="p-price">$399</span>
+        </div>
+      </div>
+      <div class="product-box">
+
+        <div class="box-img">
+          <img src="pic/photo-1479502806991-251c94be6b15.jpg" alt="">
+        </div>
+        <div class="product-detail">
+
+          <h4 class="p-detail">home rent</h4>
+          <span class="p-price">$1099</span>
+        </div>
+      </div>
+      <div class="product-box">
+
+        <div class="box-img">
+          <img src="pic/photo-1636592284266-246c90d8af22.jpg" alt="">
+        </div>
+        <div class="product-detail">
+
+          <h4 class="p-detail">pock bulks</h4>
+          <span class="p-price">$199</span>
+        </div>
+      </div>
+      <div class="product-box">
+
+        <div class="box-img">
+          <img src="pic/photo-1542291026-7eec264c27ff.jpg" alt="">
+        </div>
+        <div class="product-detail">
+
+          <h4 class="p-detail">nike shoes</h4>
+          <span class="p-price">$2399</span>
+        </div>
+      </div>
+      <div class="product-box">
+
+        <div class="box-img">
+          <img src="pic/photo-1519389950473-47ba0277781c.jpg" alt="">
+        </div>
+        <div class="product-detail">
+
+          <h4 class="p-detail">hp laptops</h4>
+          <span class="p-price">$5399</span>
+        </div>
+      </div>
+      <div class="product-box">
+
+        <div class="box-img">
+          <img src="pic/photo-1503437313881-503a91226402.jpg" alt="">
+        </div>
+        <div class="product-detail">
+
+          <h4 class="p-detail">tcl leds</h4>
+          <span class="p-price">$3399</span>
+        </div>
+      </div>
+      <div class="product-box">
+
+        <div class="box-img">
+          <img src="pic/photo-1498050108023-c5249f4df085.jpg" alt="">
+        </div>
+        <div class="product-detail">
+
+          <h4 class="p-detail">haier laptops</h4>
+          <span class="p-price">$4499</span>
+        </div>
+      </div>
+
+    </div>
+    <!-- sale section od items -->
+    <section class="sale-section">
+      <div class="header-2">
+        <h3>get sale upto 50%</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, at!</p>
+      </div>
+      <div class="sales-product">
+        <div class="product1">
+
+          <img src="pic/photo-1519389950473-47ba0277781c.jpg" alt="">
+          <div class="detail-sale">
+            <strong>haier laptops</strong>
+            <h5>get upto<br> <span>35%</span> off</h5>
+          </div>
+        </div>
+        <div class="product1">
+
+          <img src="pic/photo-1479502806991-251c94be6b15.jpg" alt="">
+          <div class="detail-sale">
+            <strong>haier laptops</strong>
+            <h5>get upto<br> <span>35%</span> off</h5>
+          </div>
+        </div>
+        <div class="product1">
+
+          <img src="pic/photo-1496171367470-9ed9a91ea931.png" alt="">
+          <div class="detail-sale">
+            <strong>haier laptops</strong>
+            <h5>get upto<br> <span>35%</span> off</h5>
+          </div>
+        </div>
+
+        <div class="product1">
+
+          <img src="pic/photo-1542291026-7eec264c27ff.jpg" alt="">
+          <div class="detail-sale">
+            <strong>haier laptops</strong>
+            <h5>get upto<br> <span>35%</span> off</h5>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- banner sction of website ------------------>
+
+    <section class="banner-section">
+      <div class="header-2">
+        <h3>sale banner</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, at!</p>
+      </div>
+      <div class="banner-img">
+        <img src="pic/istockphoto-1174989484-170667a.jpg" alt="">
+        <div class="banner-text">
+          
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- services section of website ------------->
+
+    <section class="services-section">
+      <div class="header-2">
+        <h3>our services</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, at!</p>
+      </div>
+      <div class="company-servives">
+        <div class="service1">
+          <i class="fas fa-euro-sign">&#xf153;</i>
+          <span>free shipping across<br> pakistan</span>
+        </div>
+        <div class="service1">
+          <i class="fas fa-euro-sign">&#xf153;</i>
+          <span>free shipping across<br> pakistan</span>
+        </div>
+        <div class="service1">
+          <i class="fas fa-euro-sign">&#xf153;</i>
+          <span>free shipping across<br> pakistan</span>
+        </div>
+        <div class="service1">
+          <i class="fas fa-euro-sign">&#xf153;</i>
+          <span>free shipping across<br> pakistan</span>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <h4>Copyright all reserve to ZH Studio</h4>
+    </footer>
+
+
+
+
+    <script src="respon.js"></script>
+</body>
+
+</html>
